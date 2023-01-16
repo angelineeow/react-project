@@ -1,0 +1,39 @@
+.searchResult {
+    margin: 0;
+    padding: 0;
+}
+
+.searchResult__content {
+    padding-right: 40px;
+}
+
+.searchResult__container {
+    list-style: none;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid lightgray;
+    cursor: pointer;
+}
+
+.searchResult__image {
+    align-items: top;
+    margin: 0;
+    padding: 0;
+}
+
+.searchResult__info {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.searchResult__container:hover {
+    box-shadow: 0 0 5px lightgray;
+}

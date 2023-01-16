@@ -1,0 +1,13 @@
+.App {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.searchBook{
+    padding-top: 60px;
+}
+
+.wishlist{
+    padding-top: 20px;
+}
