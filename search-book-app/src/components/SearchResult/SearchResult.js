@@ -17,7 +17,7 @@ export default function SearchResult() {
     return (
         <div className="searchResult">
             <ul className="searchResult__content">
-                {searchResult?.map((book) => (
+                {searchResult?.map((book) => {return (
                     <li className="searchResult__container" key={book.id} onClick={() => dispatch(addToWishlist(book.id, book.volumeInfo.title))}>
                         {/* image of the book */}
                         <section className="searchResult__image">
@@ -34,7 +34,7 @@ export default function SearchResult() {
                         </section>
 
                     </li>
-                ))}
+                )})}
             </ul>
 
         </div>

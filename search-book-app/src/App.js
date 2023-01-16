@@ -5,9 +5,9 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
-import searchBookReducer from './reducers/searchBookReducer';
+import rootReducer from './reducers/rootReducer';
 
-const store = createStore(searchBookReducer, applyMiddleware(thunk));
+const store = createStore(rootReducer, applyMiddleware(thunk));
 
 function App() {
   return (
