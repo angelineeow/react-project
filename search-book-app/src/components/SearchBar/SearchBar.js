@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
+import _ from "lodash";
 import "./SearchBar.css";
 
 export default function SearchBar() {
