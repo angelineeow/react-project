@@ -16,10 +16,11 @@ export default function SearchBar() {
         if (searchBookName.trim() === "") {
             return;
         } else{
+            dispatch({type: "SEARCH_BOOKS"})
             fetch(URL)
                 .then((res) => res.json())
                 .then((res) => dispatch({
-                    type: "GET_BOOKS",
+                    type: "FOUND_BOOKS",
                     payload: res.items
                 }))
         }

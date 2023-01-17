@@ -3,7 +3,8 @@ import "./SearchResult.css";
 
 export default function SearchResult() {
 
-    const searchResult = useSelector((state) => state.searchBook);
+    const searchResult = useSelector((state) => state.searchBook.bookName);
+    const loadingStatus = useSelector((state) => state.searchBook.loadingStatus);
     const dispatch = useDispatch();
 
     const addToWishlist = (id, title) => {
@@ -18,11 +19,12 @@ export default function SearchResult() {
 
     return (
         <div className="searchResult">
+            {loadingStatus ? <span className="searchResult__loading">loading</span> :
             <ul className="searchResult__content">
                 {searchResult?.map((book) => { return(
                     <li className="searchResult__container" key={book.id} onClick={() => dispatch(addToWishlist(book.id, book.volumeInfo.title))}>
-                        
-\                       <section className="searchResult__image">
+          
+                        <section className="searchResult__image">
                             <img id={book.id} src={book.volumeInfo.imageLinks?.thumbnail} alt={book.volumeInfo.description} />
                         </section>
 
@@ -37,7 +39,7 @@ export default function SearchResult() {
                     </li>
                 )})}
             </ul>
-
+            }
         </div>
     );
 }
