@@ -5,9 +5,15 @@
 }
 
 .searchBook{
-    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    width: fit-content;
 }
 
 .wishlist{
-    padding-top: 20px;
+    display: flex;
+    width: 500px;
+    padding-top: 18px;
+    justify-content: center;
 }

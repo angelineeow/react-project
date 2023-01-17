@@ -1,6 +1,7 @@
 import "./App.css";
 import SearchBar from './components/SearchBar/SearchBar';
 import SearchResult from './components/SearchResult/SearchResult';
+import Wishlist from "./components/Wishlist/Wishlist";
 import React from 'react';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
@@ -18,6 +19,7 @@ function App() {
           <SearchResult />
         </section>
         <section className="wishlist">
+          <Wishlist />
         </section>
       </div>
     </Provider>

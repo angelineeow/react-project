@@ -5,7 +5,7 @@ const searchBook = function (
 ) {
     switch(action.type) {
         case "GET_BOOKS":
-            return {searchBook: action.payload};
+            return action.payload;
         default:
             return searchBook;
     }
