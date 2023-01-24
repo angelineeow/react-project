@@ -36,7 +36,7 @@ export default function SearchResult() {
 
                         <section className="searchResult__info">
                             <h1>{title}</h1>
-                            <p><b>Author(s): </b> {authors ? authors : "Unknown"}</p>
+                            <p><b>Author(s): </b> {authors ? authors.join(", ") : "Unknown"}</p>
                             <p><b>Publishers: </b> {publisher ? publisher : "Unknown"}</p>
                             <p><b>Published date: </b> {publishedDate ? publishedDate : "Unknown"}</p>
                             <p><b>Description: </b> {description ? description : "None" }</p>
