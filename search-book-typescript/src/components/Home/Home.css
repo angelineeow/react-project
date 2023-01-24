@@ -1,0 +1,6 @@
+.searchBook{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    padding-top: 20px;
+}

@@ -1,0 +1,29 @@
+.searchBar__form {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.searchBar__input {
+    display: flex;
+    padding: 3px;
+    width: 250px;
+    font-size: medium;
+}
+
+
+.searchBar__btn--submit {
+    background-color: rgb(135, 179, 194);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    height: 28px;
+    cursor: pointer;
+}
+
+.searchBar__btn--submit:hover {
+    box-shadow: 0 0 5px lightgray;
+}
