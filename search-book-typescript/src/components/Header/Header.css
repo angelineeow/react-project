@@ -9,7 +9,7 @@
     margin-bottom: 0;
   }
 
-  li{
+  header li{
     background-color: #D7BDE2;
     border: none;
     border-radius: 4px;
@@ -21,7 +21,7 @@
     cursor: pointer;
   }
 
-  a, a:visited, a:hover, a:active {
+  a:visited, a:hover, a:active {
     color: white;
   }
   li:hover{
