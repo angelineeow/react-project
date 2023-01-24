@@ -8,3 +8,22 @@
     margin: 30px;
     margin-bottom: 0;
   }
+
+  li{
+    background-color: #D7BDE2;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+  }
+  
+  a:link{
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  a, a:visited, a:hover, a:active {
+    color: white;
+  }
+  li:hover{
+    box-shadow: 0 0 5px lightgray;
+  }
